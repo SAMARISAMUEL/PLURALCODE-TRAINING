@@ -1,0 +1,9 @@
+.hero {
+  background-color: blue;
+}
+.jobs {
+  display: flex;
+}
+.features {
+  display: flex;
+}
