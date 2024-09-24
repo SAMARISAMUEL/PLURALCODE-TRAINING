@@ -19,7 +19,6 @@ h2 {
 ul {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   width: 60%;
   margin-left: 120px;
   color: #15143966;
@@ -27,17 +26,20 @@ ul {
   gap: 0.8rem;
   font-weight: 500;
 }
+/* hero */
 .hero {
   display: flex;
 
   margin-top: 2rem;
 }
+/* left hero */
 .left {
   width: 65%;
 }
 .left h1 {
   color: #1e0e62;
 }
+/* main div */
 .main {
   display: flex;
   gap: 3rem;
