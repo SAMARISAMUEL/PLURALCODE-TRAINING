@@ -4,6 +4,7 @@ body {
   margin: 2rem 8rem;
   background-color: #1e0e62;
   font-family: "Dm sans";
+  cursor: pointer;
 }
 a {
   text-decoration: none;
@@ -17,6 +18,7 @@ button {
   border: none;
   font-size: inherit;
   color: inherit;
+  cursor: pointer;
 }
 /* nav */
 nav {
@@ -125,6 +127,19 @@ h2 {
   border-radius: 999px;
   padding: 5px;
   font-size: xx-small;
+}
+.first_line {
+  border: 0.5px solid #1514393a;
+  width: 42%;
+  position: relative;
+  top: 27px;
+}
+.second_line {
+  border-bottom: 1px solid #1514393d;
+  width: 42%;
+  position: relative;
+  bottom: 26px;
+  left: 105px;
 }
 .or {
   width: 100%;

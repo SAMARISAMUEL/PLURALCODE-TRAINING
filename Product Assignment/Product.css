@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@font-face {
+  font-family: "Gilroy-Regular ☞";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy-Regular ☞"), url("Gilroy-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy-Bold ☞";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gilroy-Bold ☞"), url("Gilroy-Bold.woff") format("woff");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  background: none;
+  font-family: "Gilroy-Bold ☞";
+  font-size: x-small;
+}
+img {
+  width: 10px;
+  height: 10px;
+}
+/* header section */
+nav {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  place-items: start center;
+  padding-top: 1.8rem;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 10px;
+  font-size: x-small;
+  font-family: "Gilroy-Bold ☞";
+  font-weight: bolder;
+}
+nav h3 {
+  font-family: "Rubik";
+  margin-right: 3.5rem;
+}
+nav button {
+  background: #473bf0;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: x-small;
+}
+/* hero section */
+.hero img {
+  width: 40%;
+  height: auto;
+  margin-top: 6rem;
+  margin-left: 310px;
+}
+.hero_text {
+  width: 55%;
+  margin: auto;
+  text-align: center;
+}
+.hero_text h3 {
+  margin-left: 60px;
+  font-size: x-small;
+  color: #f64b4b;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-family: "Gilroy-Bold ☞";
+}
+.hero_text h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Gilroy-Bold ☞";
+  font-weight: bolder;
+}
+.hero_text p {
+  font-family: "Gilroy-Regular ☞";
+  font-size: small;
+  line-height: 1.5;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.hero_text button {
+  background: #473bf0;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: x-small;
+}
+.hero_text .hero_text_small {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-family: "Gilroy-Bold ☞";
+  font-size: xx-small;
+}
+/* content 1 section */
+.content_1 {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 3rem;
+  margin-top: 4rem;
+  background-color: #f4f7fa;
+}
+.content_1 .left_image {
+  width: 100%;
+  height: 100%;
+}
+.bud_image #ear_bud {
+  position: relative;
+  right: 6px;
+  bottom: 20px;
+}
+.wave_image #wave {
+  position: relative;
+  right: 2px;
+  bottom: 20px;
+}
+.right {
+  display: flex;
+  margin-top: 2rem;
+}
+.right .right_one {
+  display: flex;
+  align-items: center;
+}
+.right .right_two {
+  display: flex;
+  align-items: center;
+}
+.content_1_text {
+  margin-top: 3rem;
+}
+.bud_image,
+.wave_image {
+  transform: scale(2, 2);
+  position: relative;
+  bottom: 40px;
+  left: 1.5rem;
+}
+.content_1 h2,
+.content_1 p {
+  margin-bottom: 1rem;
+}
+.content_1 h2 {
+  width: 45%;
+  font-family: "Gilroy-Bold ☞";
+  font-weight: bolder;
+}
+.content_1_text p {
+  width: 55%;
+  margin-bottom: 6rem;
+  font-family: "Gilroy-Regular ☞";
+  color: #161c2d;
+}
+.right h5,
+.right p {
+  width: 60%;
+  margin-left: 1rem;
+}
+.right h5 {
+  font-family: "Gilroy-Bold ☞";
+  font-weight: bolder;
+  color: #161c2d;
+  margin-bottom: 0.5rem;
+}
+
+.right p {
+  font-family: "Gilroy-Regular ☞";
+  font-size: xx-small;
+  line-height: 1.5;
+  color: #161c2d;
+  width: 50%;
+}
+
+/* content 2 */
+.content_2 {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  background-color: #473bf0;
+}
+.content_2 .number {
+  width: 100%;
+  height: auto;
+}
+.content_2_text {
+  padding: 5rem;
+  margin-left: 7rem;
+}
+.content_2_image {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  place-content: end start;
+}
+.oval {
+  transform: scale(3, 3);
+  padding: 1rem;
+}
+.content_2_text h2 {
+  width: 80%;
+  font-family: "Gilroy-Bold ☞";
+  font-weight: bolder;
+  color: #ffffff;
+}
+.content_2_text .para {
+  width: 70%;
+  color: #ffffff8c;
+  font-family: "Gilroy-Regular ☞";
+  font-size: x-small;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+.content_2_image p {
+  margin-right: 2rem;
+  font-family: "Rubik";
+  color: #ffffff;
+  width: 265px;
+}
+span {
+  margin-left: 3.2rem;
+  font-family: "Gilroy-Bold ☞";
+  font-size: x-small;
+  color: #ffffffb0;
+}
+/* content 3 */
+.content_3 {
+  background-image: url("Group\ 162.png");
+  background-size: 100% 100%;
+  padding: 4rem;
+}
+.content_3 h1,
+.content_3 p {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  color: #ffffff;
+}
+
+.content_3 h1 {
+  font-family: "Gilroy-Bold ☞";
+  margin-bottom: 1rem;
+}
+.content_3 p {
+  font-family: "Gilroy-Regular ☞";
+  color: #ffffffb4;
+  font-size: small;
+}
+.content_3 img {
+  width: 20%;
+  height: 100%;
+  margin-left: 300px;
+  margin-top: 3rem;
+}
+/* pricing section */
+.pricing h2 {
+  width: 35%;
+  text-align: center;
+  margin: auto;
+  margin-top: 5rem;
+  font-size: 30px;
+  font-family: "Gilroy-Bold ☞";
+}
+.pricing > p {
+  width: 35%;
+  text-align: center;
+  margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem;
+  font-family: "Gilroy-Regular ☞";
+  color: #161c2d;
+}
+.pricing_cards {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  width: 70%;
+  margin: auto;
+}
+.pricing_cards img {
+  width: 80%;
+  height: auto;
+  margin-left: 25px;
+  margin-bottom: 1rem;
+}
+.pricing_cards h3 {
+  margin-left: 40px;
+  margin-bottom: 1rem;
+  font-family: "Gilroy-Bold ☞";
+}
+.pricing_cards p {
+  text-align: center;
+  width: 90%;
+  font-size: x-small;
+  margin-bottom: 1rem;
+  font-family: "Gilroy-Regular ☞";
+  color: #161c2d;
+  line-height: 1rem;
+}
+.pricing_cards button {
+  background: #473bf0;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px;
+  font-size: x-small;
+  margin-left: 40px;
+}
+/* cta section */
+.cta img {
+  width: 100%;
+  height: auto;
+  margin-top: 6rem;
+}
+/* footer section */
+footer {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  place-items: center end;
+  padding: 2rem;
+}
+footer h3 {
+  font-family: "Rubik";
+  margin-left: 5rem;
+}
+footer ul {
+  display: grid;
+  grid-template-columns: 40% 50% 30%;
+  margin-right: 7rem;
+  gap: 0.5rem;
+  font-size: x-small;
+  font-family: "Gilroy-Bold ☞";
+}
