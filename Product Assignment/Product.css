@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/* FONTFACE GILORY */
 @font-face {
   font-family: "Gilroy-Regular ☞";
   font-style: normal;
@@ -11,13 +12,17 @@
   font-weight: normal;
   src: local("Gilroy-Bold ☞"), url("Gilroy-Bold.woff") format("woff");
 }
-
 * {
   padding: 0px;
   margin: 0px;
-  box-sizing: border box;
 }
-
+body {
+  /* overflow-x: hidden; */
+  margin: 0;
+  box-sizing: border box;
+  padding: 0px;
+  margin: 0px;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -40,7 +45,7 @@ img {
 nav {
   display: grid;
   grid-template-columns: 20% 60% 20%;
-  place-items: start center;
+  place-items: center center;
   padding-top: 1.8rem;
 }
 nav ul {
@@ -51,26 +56,32 @@ nav ul {
   font-size: x-small;
   font-family: "Gilroy-Bold ☞";
   font-weight: bolder;
+  align-items: end;
 }
 nav h3 {
   font-family: "Rubik";
-  margin-right: 3.5rem;
+  margin: 0rem;
 }
 nav button {
   background: #473bf0;
   color: #ffffff;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 5px;
   font-size: x-small;
+  transition: all 3s linear;
 }
-/* hero section */
+nav .menu {
+  display: none;
+}
+/* section 1 */
 .hero img {
   width: 40%;
   height: auto;
   margin-top: 6rem;
-  margin-left: 310px;
+  margin-left: 350px;
 }
+/* h.heero section */
 .hero_text {
   width: 55%;
   margin: auto;
@@ -114,15 +125,15 @@ nav button {
 }
 /* content 1 section */
 .content_1 {
-  display: grid;
-  grid-template-columns: 40% 60%;
+  display: flex;
   gap: 3rem;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   background-color: #f4f7fa;
+  /* margin-left: 4rem; */
 }
 .content_1 .left_image {
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: auto;
 }
 .bud_image #ear_bud {
   position: relative;
@@ -135,6 +146,7 @@ nav button {
   bottom: 20px;
 }
 .right {
+  width: 60%;
   display: flex;
   margin-top: 2rem;
 }
@@ -347,4 +359,359 @@ footer ul {
   gap: 0.5rem;
   font-size: x-small;
   font-family: "Gilroy-Bold ☞";
+}
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+    width: auto;
+  }
+  nav ul {
+    display: none;
+  }
+  nav > div > .menu {
+    display: block;
+    margin-right: 60%;
+  }
+  nav button {
+    display: none;
+  }
+  .hero img {
+    width: 40%;
+    height: auto;
+    margin-top: 4rem;
+    margin-left: 8rem;
+  }
+  nav {
+    /* margin-left: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav h3 {
+    font-family: "Rubik";
+    margin-right: 50%;
+  }
+  nav .menu {
+    display: block;
+    font-size: 24px;
+  }
+  .hero_text {
+    width: 80%;
+  }
+  .hero_text h3 {
+    width: 100%;
+    margin-left: 1px;
+  }
+  .hero_text h1 {
+    width: 100%;
+  }
+  .hero_text p {
+    width: 100%;
+  }
+
+  .content_1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .content_1_text {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .content_1 h2 {
+    width: 80%;
+  }
+  .content_1_text p {
+    width: 80%;
+  }
+  .content_1 .left_image {
+    width: 100%;
+    height: auto;
+  }
+
+  .pricing {
+    display: flex;
+    flex-direction: column;
+  }
+  .pricing_cards {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+  }
+  .pricing h2 {
+    width: 60%;
+  }
+  .pricing p {
+    width: 60%;
+  }
+  .pricing_cards p {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+  }
+  .bud_image {
+    position: relative;
+    margin-right: 45%;
+    transform: scale(4, 4);
+  }
+  .right p {
+    width: 60%;
+  }
+  .right_one {
+    display: flex;
+    flex-direction: column;
+  }
+  .right_two {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bud_image #ear_bud {
+    position: absolute;
+    right: 20%;
+    bottom: 10%;
+  }
+  .wave_image {
+    position: relative;
+    margin-right: 45%;
+    transform: scale(4, 4);
+  }
+
+  .wave_image #wave {
+    position: absolute;
+    right: 20%;
+    bottom: 10%;
+  }
+  .content_2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .content_2_text {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .content_2_text h2,
+  .content_2_text .para {
+    text-align: center;
+    width: 80%;
+  }
+  .content_2_image {
+    display: flex;
+    flex-direction: column;
+  }
+  .oval {
+    transform: scale(8, 8);
+    margin-left: 30%;
+    margin-bottom: 2rem;
+  }
+  .content_2_image p {
+    width: 80%;
+    text-align: center;
+  }
+  .content_2_text span {
+    margin-top: 2rem;
+    margin-right: 40%;
+  }
+  .content_3 {
+    width: auto;
+  }
+  .content_3 h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .content_3 p {
+    width: 80%;
+    text-align: center;
+  }
+  .content_3 img {
+    margin-left: 40%;
+  }
+  .cta img {
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer h3 {
+    margin-bottom: 1rem;
+    margin-right: 30%;
+  }
+}
+/*FOR TABLET*/
+@media (min-width: 701px) and (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+    width: auto;
+  }
+  nav ul {
+    display: none;
+  }
+  nav > div > .menu {
+    display: block;
+    margin-right: 60%;
+  }
+  nav button {
+    display: none;
+  }
+  .hero img {
+    width: 40%;
+    height: auto;
+    margin-top: 4rem;
+    margin-left: 8rem;
+  }
+  nav {
+    /* margin-left: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav h3 {
+    font-family: "Rubik";
+    margin-right: 50%;
+  }
+  .hero_text h3 {
+    width: 100%;
+    margin-left: 1px;
+  }
+  .hero_text h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: "Gilroy-Bold ☞";
+    font-weight: bolder;
+    width: 100%;
+  }
+  .content_1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .content_1 .left_image {
+    width: 100%;
+    height: auto;
+  }
+  .content_2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .pricing {
+    display: flex;
+    flex-direction: column;
+  }
+  .pricing_cards {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+  }
+  nav .menu {
+    display: block;
+    font-size: 24px;
+  }
+  .content_1_text {
+    width: 80%;
+    margin: auto 30%;
+    text-align: center;
+  }
+  .right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+  }
+  .bud_image {
+    position: relative;
+    margin-right: 45%;
+    transform: scale(4, 4);
+  }
+  .right p {
+    width: 60%;
+  }
+  .right_one {
+    display: flex;
+    flex-direction: column;
+  }
+  .right_two {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bud_image #ear_bud {
+    position: absolute;
+    right: 20%;
+    bottom: 10%;
+  }
+  .wave_image {
+    position: relative;
+    margin-right: 45%;
+    transform: scale(4, 4);
+  }
+
+  .wave_image #wave {
+    position: absolute;
+    right: 20%;
+    bottom: 10%;
+  }
+  .content_2_text h2,
+  .content_2_text .para {
+    text-align: center;
+  }
+  .content_2_image {
+    display: flex;
+    flex-direction: column;
+  }
+  .oval {
+    transform: scale(8, 8);
+    margin-left: 30%;
+    margin-bottom: 2rem;
+  }
+  .content_2_image p {
+    width: 80%;
+    text-align: center;
+  }
+  span {
+    margin-left: 33%;
+    margin-top: 2rem;
+  }
+  .content_3 {
+    width: auto;
+  }
+  .content_3 h1 {
+    width: 60%;
+  }
+  .content_3 img {
+    margin-left: 40%;
+  }
+  .cta img {
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer h3 {
+    margin-bottom: 1rem;
+    margin-right: 30%;
+  }
 }
