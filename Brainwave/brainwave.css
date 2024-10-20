@@ -609,7 +609,6 @@ footer {
 .footer_bottom {
   display: grid;
   grid-template-columns: 40% 17% 17% 20% 25%;
-
   padding: 7rem;
   color: #fff;
 }
